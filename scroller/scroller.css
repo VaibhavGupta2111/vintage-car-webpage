@@ -1,0 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(164,205,249);
+    position: relative;
+
+}
+#nav{
+    height: 40px;
+    width: 40%;
+    background-color: rgb(164,205,249);
+    margin-left: 30%;
+    font-family: gilroy;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 50;
+}
+#spot{
+    margin-left: 29%;
+    margin-top: 40px;
+}
+h1{
+    font-family: glitten;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 70px;
+    
+}
+#spot h2{
+    font-family: gilroy;
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 40px;
+    margin-left: 175px;
+    
+}
+h3{
+    font-family: gilroy;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 165px;
+}
+#scroller{
+    height: 45%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 34%;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    animation-name: anim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+#dspot{
+    margin-left: 30%;
+    margin-top: 19%;
+    color: #fff;
+}
+#dspot h3{
+    margin-left: 230px;
+}
+
+@keyframes anim {
+    0%{
+        transform: translatex(0%);
+    }
+  
+    100%{
+        transform: translatex(-100%);
+    }
+}
+::-webkit-scrollbar{
+    display: none;
+}
